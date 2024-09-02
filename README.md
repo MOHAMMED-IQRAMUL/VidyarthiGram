@@ -1,5 +1,5 @@
-# GenZLearn
+# VidyarthiGram
 
-## Learning Made Easier
+## Bridging Education and Connectivity
 
 Comming Soon
