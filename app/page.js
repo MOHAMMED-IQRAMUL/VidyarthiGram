@@ -20,7 +20,7 @@ export default function Home() {
     <main>
       <nav className="flex justify-between items-center min-h-[70px] px-10 py-2 font-mono bg-orange-400">
         <div className="text-3xl font-extrabold text-amber-200 cursor-pointer">
-          GenZLearn
+        VidyarthiGram
         </div>
         <div className="flex gap-10 text-amber-200 font-semibold text-lg">
           <div className="cursor-pointer hover:underline">About US</div>
@@ -39,7 +39,7 @@ export default function Home() {
       <section className="w-full font-mono min-h-[700px] flex flex-col justify-center items-center bg-orange-100 gap-20">
         <div>
           <TypeIt className="text-center font-extrabold text-4xl text-orange-500">
-            Welcome To GenZLearn
+            Welcome To VidyarthiGram
           </TypeIt>
         </div>
         <div>

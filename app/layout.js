@@ -4,8 +4,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "GenZLearn",
-  description: "Learning Made Easier",
+  title: "VidyarthiGram - Bridging Education and Connectivity",
+  description: "Bridging Education and Connectivity",
 };
 
 export default function RootLayout({ children }) {
