@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="w-full relative top-0 left-0 flex justify-between items-center min-h-[70px] px-10 py-2 font-mono bg-orange-400">
       <div className="text-3xl font-extrabold text-amber-200 cursor-pointer flex gap-1 items-center">
-        <a href="/Dashboard" className="flex gap-1 items-center">
+        <a href="/" className="flex gap-1 items-center">
           {" "}
           <Image 
             width={50}
