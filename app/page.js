@@ -14,7 +14,7 @@ export default function Home() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setIndex((index) => index + 1);
-    }, 3000); 
+    }, 3000);
 
     return () => clearInterval(intervalId);
   }, []);
