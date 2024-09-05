@@ -1,12 +1,11 @@
-import { SignOutButton, UserButton, useUser } from "@clerk/nextjs";
+"use client"
+import { UserButton, useUser } from "@clerk/nextjs";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import React, { useEffect } from "react";
+import React from "react";
 
 const Navbar = () => {
   const { isLoaded, isSignedIn } = useUser();
-  const router = useRouter();
-
+ 
   return (
     <nav className="w-full relative top-0 left-0 flex justify-between items-center min-h-[70px] px-10 py-2 font-mono bg-orange-400">
       <div className="text-3xl font-extrabold text-amber-200 cursor-pointer flex gap-1 items-center">
