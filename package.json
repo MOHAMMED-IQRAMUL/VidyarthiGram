@@ -19,8 +19,11 @@
     "dayjs": "^1.11.13",
     "firebase": "^10.13.1",
     "next": "14.2.5",
+    "openai": "^4.57.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^6.26.1",
     "react-text-transition": "^3.1.0",
     "recharts": "^2.12.7",
     "typeit-react": "^2.7.2"

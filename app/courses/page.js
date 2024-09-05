@@ -1,7 +1,11 @@
-import React from 'react'
-import LeftSideBar from '../components/LeftSideBar'
-import RightNavBar from '../components/RightNavBar'
-import Footer from '../components/Footer'
+// pages/courses/index.js
+"use client"
+import React from 'react';
+import CourseList from '../components/CourseList';
+
+import RightNavBar from '../components/RightNavBar';
+import Footer from '../components/Footer';
+import LeftSideBar from '../components/LeftSideBar';
 
 const Courses = () => {
   return (
@@ -9,13 +13,13 @@ const Courses = () => {
       <div className="hero w-[90%] mx-auto flex">
         <LeftSideBar />
         <div className="right ml-2 w-[80%] min-h-screen">
-<RightNavBar/>
-Courses
+          <RightNavBar />
+          <CourseList />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Courses
+export default Courses;

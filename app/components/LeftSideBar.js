@@ -22,14 +22,13 @@ import {
 const LeftSideBar = () => {
   const { isLoaded, isSignedIn, user, getFullName } = useUser();
   const router = useRouter();
-  const [url, setUrl] = useState("");
-   
 
+  const url =  window.location.pathname
+  console.log(url)
   useEffect(() => {
     if (isLoaded && !isSignedIn) {
       router.push("/sign-in");
     }
-    setUrl(window.location.pathname);
   }, [isLoaded, isSignedIn, router]);
 
   const handleNavigation = (path) => {
@@ -69,10 +68,10 @@ const LeftSideBar = () => {
         {menuOptions.slice(0, 3).map(({ label, icon, path }) => (
           <div
             key={label}
-            className={`Opt text-gray-500 hover:text-blue-500 hover:fill-blue-500 hover:bg-blue-200 flex gap-2 p-1 pl-3 rounded-xl cursor-pointer ${path == url && "text-blue-500 " }`}
+            className={`Opt hover:text-blue-500 hover:fill-blue-500 hover:bg-blue-200 flex gap-2 p-1 pl-3 rounded-xl cursor-pointer  ${path===url ?"text-blue-500" : "text-gray-500"}`}
             onClick={() => handleNavigation(path)}
             
-          >
+          > 
             {icon}
             <div>{label}</div>
           </div>
