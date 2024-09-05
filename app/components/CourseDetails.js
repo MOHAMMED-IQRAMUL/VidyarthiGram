@@ -43,7 +43,8 @@ const CourseDetails = () => {
         <h2 className="text-2xl font-bold mt-4">Course Content</h2>
         <br />
         <ul>
-          {course.content.map((item, index) => (
+          {console.log("Course : "+course,"content: ", course.content)}
+          {course?.content?.map((item, index) => (
             (<><li key={index}>{item}</li>
             <br /></>)
           ))}
