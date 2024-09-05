@@ -5,6 +5,7 @@ import { Container, Typography, Grid, Card, CardContent, Avatar, Box, IconButton
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const teamMembers = [
   {
@@ -13,15 +14,15 @@ const teamMembers = [
     image: "Iqramul.png",
     linkedin: "https://www.linkedin.com/in/mohammed-iqramul/",
     github: "https://github.com/MOHAMMED-IQRAMUL",
-    skills: ["React", "JavaScript", "CSS"],
+    skills: ["NextJS", "React", "Firebase"],
   },
   {
     name: "Satyam Kumar",
     role: "Frontend Developer",
     image: "Satyam.png.jpg",
     linkedin: "https://www.linkedin.com/in/satyam-thakur-a610b4249",
-    github: "https://github.com/shams24x7",
-    skills: ["Node.js", "Express", "MongoDB"],
+    github: "https://github.com/tanXXXX",
+    skills: ["React", "Node.js", "TailwindCSS"],
   },
   {
     name: "Shams Tabrej Alam",
@@ -29,7 +30,7 @@ const teamMembers = [
     image: "Shams.png",
     linkedin: "https://www.linkedin.com/in/shams24x7",
     github: "https://github.com/shams24x7",
-    skills: ["Node.js", "Express", "MongoDB"],
+    skills: ["Beta Testing", "Javascript"],
   },
   {
     name: "Shivam Kumar",
@@ -37,7 +38,25 @@ const teamMembers = [
     image: "Shivam.png",
     linkedin: "https://www.linkedin.com/in/shivamkumar2687/",
     github: "https://github.com/shams24x7",
-    skills: ["Node.js", "Express", "MongoDB"],
+    skills: ["Node.js", "JS", "CSS"],
+  },
+
+  {
+    name: "Tannu Priya",
+    role: "UI-UX / Planning",
+    image: "Tannu.png",
+    linkedin: "https://www.linkedin.com/in/tannupriya222003/",
+    github: "https://github.com/crystalinsky22",
+    skills: ["UI", "UX", "Planning"],
+  },
+
+  {
+    name: "Harshita Chanchal",
+    role: "UI-UX / Planning",
+    image: "harshita.jpg",
+    linkedin: "https://www.linkedin.com/in/harshitachanchal310703",
+    github: "https://github.com/HarshitaChanchal",
+    skills: ["UI", "UX", "Planning"],
   },
 ];
 
@@ -57,7 +76,7 @@ const OurTeam = () => {
         Meet Our Team
       </Typography>
 
-      <Container>
+      <Container className="pb-5">
         <Grid container spacing={4}>
           {teamMembers.map((member, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
@@ -112,6 +131,7 @@ const OurTeam = () => {
           ))}
         </Grid>
       </Container>
+      <Footer/>
     </section>
   );
 };
