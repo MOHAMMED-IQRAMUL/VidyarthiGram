@@ -25,7 +25,9 @@ import {
   SchoolOutlined,
   MenuBookOutlined,
   GroupsOutlined,
-   
+  GridViewOutlined,
+  ArticleOutlined,
+    
 } from "@mui/icons-material";
   import CalendarCard from "../components/CalendarCard";
 import Footer from "../components/Footer";
@@ -77,6 +79,9 @@ const Dashboard = () => {
   };
 
   const menuOptions = [
+    { label: "Courses", icon: <GridViewOutlined />, path: "/courses" },
+    { label: "Assignment", icon: <ArticleOutlined />, path: "/assignment" },
+    { label: "Schools", icon: <SchoolOutlined />, path: "/schools" },
     { label: "Summarize AI", icon: <SummarizeOutlined />, path: "/summarize" },
     { label: "Memorize AI", icon: <PsychologyOutlined />, path: "/memorize" },
     { label: "AI Assistant", icon: <AssistantOutlined />, path: "/assistant" },
@@ -93,12 +98,13 @@ const Dashboard = () => {
       <div className="hero w-[80%] mx-auto flex">
         {/* Left Sidebar */}
         <div className="left w-[25%] min-h-screen border-r-2 border-gray-400">
-          <div className="Logo min-h-[100px] flex justify-center items-center text-4xl">
-            VidyarthiGram
+          <div className="Logo min-h-[100px] flex justify-center items-center text-4xl text-blue-500 font-mono">
+          <a href="/Dashboard">VidyarthiGram</a>
+
           </div>
           <hr className="w-[80%] my-2 border-gray-500 mx-auto" />
           <div className="menu mt-[15px] mx-auto flex flex-col gap-[15px] w-[80%]">
-            {menuOptions.slice(0, 5).map(({ label, icon, path }) => (
+            {menuOptions.slice(0, 3).map(({ label, icon, path }) => (
               <div
                 key={label}
                 className="Opt text-gray-500 hover:text-blue-500 hover:fill-blue-500 hover:bg-blue-200 flex gap-2 p-1 pl-3 rounded-xl cursor-pointer"
@@ -111,7 +117,20 @@ const Dashboard = () => {
           </div>
           <hr className="w-[80%] my-2 border-gray-500 mx-auto" />
           <div className="menu mt-[15px] mx-auto flex flex-col gap-[15px] w-[80%]">
-            {menuOptions.slice(5).map(({ label, icon, path }) => (
+            {menuOptions.slice(3, 8).map(({ label, icon, path }) => (
+              <div
+                key={label}
+                className="Opt text-gray-500 hover:text-blue-500 hover:fill-blue-500 hover:bg-blue-200 flex gap-2 p-1 pl-3 rounded-xl cursor-pointer"
+                onClick={() => handleNavigation(path)}
+              >
+                {icon}
+                <div>{label}</div>
+              </div>
+            ))}
+          </div>
+          <hr className="w-[80%] my-2 border-gray-500 mx-auto" />
+          <div className="menu mt-[15px] mx-auto flex flex-col gap-[15px] w-[80%]">
+            {menuOptions.slice(8).map(({ label, icon, path }) => (
               <div
                 key={label}
                 className="Opt text-gray-500 hover:text-blue-500 hover:fill-blue-500 hover:bg-blue-200 flex gap-2 p-1 pl-3 rounded-xl cursor-pointer"

@@ -43,7 +43,7 @@ const Footer = () => {
          
          
          
-        <a href="https://github.com/MOHAMMED-IQRAMUL/VidyarthiGram" class="text-gray-400 hover:text-gray-500">
+        <a href="https://github.com/MOHAMMED-IQRAMUL/VidyarthiGram" target="_blank" class="text-gray-400 hover:text-gray-500">
           <span class="sr-only">GitHub</span>
           <svg
             class="w-6 h-6"
