@@ -19,10 +19,13 @@ const Navbar = () => {
       </div>
       <div className="flex gap-10 text-amber-200 font-semibold text-lg">
         <div className="cursor-pointer hover:underline">
-          <a href="/AboutUS">About US</a>
+          <a href="/about">About US</a>
         </div>
         <div className="cursor-pointer hover:underline">
-          <a href="/ContactUS">Contact US</a>
+          <a href="/contact">Contact US</a>
+        </div>
+        <div className="cursor-pointer hover:underline">
+          <a href="/faqs">FAQ&apos;s</a>
         </div>
       </div>
       <div className="flex gap-10 text-amber-200 font-semibold text-lg">

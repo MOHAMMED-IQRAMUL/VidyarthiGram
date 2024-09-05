@@ -5,6 +5,7 @@ import TextTransition, { presets } from "react-text-transition";
 import { Button } from "@mui/material";
 import Footer from "./components/Footer";
 import Link from "next/link";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   const [index, setIndex] = useState(0);
@@ -21,23 +22,7 @@ export default function Home() {
 
   return (
     <main>
-      <nav className="flex justify-between items-center min-h-[70px] px-10 py-2 font-mono bg-orange-400">
-        <div className="text-3xl font-extrabold text-amber-200 cursor-pointer ">
-        <a href="/" className="flex gap-1 items-center"> <img src="/image.png" alt="Logo" className="w-[50px] h-[50px] rounded-full" /> VidyarthiGram </a> 
-        </div>
-        <div className="flex gap-10 text-amber-200 font-semibold text-lg">
-          <div className="cursor-pointer hover:underline"><a href="/AboutUS">About US</a></div>
-          <div className="cursor-pointer hover:underline"><a href="/ContactUS">Contact US</a></div>
-        </div>
-        <div className="flex gap-10 text-amber-200 font-semibold text-lg">
-          <div className="border-2 border-amber-500 px-2 rounded-lg cursor-pointer hover:bg-amber-500 hover:text-white ">
-           <a href="/sign-in">Sign In</a> 
-          </div>
-          <div className="border-2 border-amber-500 px-2 rounded-lg cursor-pointer hover:bg-amber-500 hover:text-white ">
-          <a href="sign-up">Sign Up</a>
-          </div>
-        </div>
-      </nav>
+      <Navbar/>
 
       <section className="w-full font-mono min-h-[700px] flex flex-col justify-center items-center bg-orange-100 gap-20">
         <div >
@@ -96,7 +81,7 @@ export default function Home() {
           </div>
 
 
-          <div class="boxes box1 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[14vh] z-[5]  bg-orange-500 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center">
+          <div className="boxes box1 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[14vh] z-[5]  bg-orange-500 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center">
             <h1 className="font-bold text-4xl  text-orange-200">
             Understanding and Evaluation
             </h1>
@@ -108,7 +93,7 @@ export default function Home() {
           </div>
 
 
-          <div class="boxes box1 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[12vh] z-[4]  bg-orange-200 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center">
+          <div className="boxes box1 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[12vh] z-[4]  bg-orange-200 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center">
             <div className="border border-slate-800 m-[10px]  "></div>
             <h1 className="font-bold text-4xl  text-orange-500">
               Dashboard
@@ -121,7 +106,7 @@ export default function Home() {
           </div>
 
 
-          <div class="boxes box2 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[10vh] z-[3] bg-orange-500 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center">
+          <div className="boxes box2 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[10vh] z-[3] bg-orange-500 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center">
             <h1 className="font-bold text-4xl  text-orange-200">
               Mentor Connect
             </h1>
@@ -133,7 +118,7 @@ export default function Home() {
           </div>
 
 
-          <div class="boxes box3 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[8vh] z-[2] bg-orange-200 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center">
+          <div className="boxes box3 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[8vh] z-[2] bg-orange-200 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center">
             <h1 className="font-bold text-4xl  text-orange-500">
             AI-Powered Chat Assistant
             </h1>
@@ -143,7 +128,7 @@ export default function Home() {
             answer general questions or provide specific help.
             </p>
           </div>
-          <div class="boxes box4 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[6vh] z-[1] bg-orange-500 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center">
+          <div className="boxes box4 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[6vh] z-[1] bg-orange-500 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center">
             <h1 className="font-bold text-4xl  text-orange-200">
             Game-Based Learning
             </h1>
