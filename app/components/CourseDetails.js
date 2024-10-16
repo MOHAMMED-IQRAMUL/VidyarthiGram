@@ -48,6 +48,12 @@ const CourseDetails = () => {
             (<><li key={index}>{item}</li>
             <br /></>)
           ))}
+          <li>
+          <video src="/Rec_1.mp4" controls width="600" height="400" preload="auto" poster="poster-image.jpg">
+  Your browser does not support the video tag.
+</video>
+
+          </li>
         </ul>
       </div>
     </div>

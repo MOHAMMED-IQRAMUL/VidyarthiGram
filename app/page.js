@@ -55,9 +55,9 @@ export default function Home() {
             Features
           </h2>
         </div>
-        <div class="box m-0 p-0 border-0 flex flex-col gap-[2rem]">
+        <div className="box m-0 p-0 border-0 flex flex-col gap-[2rem]">
           
-          <div class="boxes box1 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[18vh] z-[7]  bg-orange-500 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center ">
+          <div className="boxes box1 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[18vh] z-[7]  bg-orange-500 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center ">
             <h1 className="font-bold text-4xl  text-orange-200">
               Note Summarizer
             </h1>
@@ -68,7 +68,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div class="boxes box1 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[16vh] z-[6]  bg-orange-200 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center">
+          <div className="boxes box1 m-0 p-5 border-0 sticky left-[2px] h-[58vh] bottom-[16vh] z-[6]  bg-orange-200 w-[80%] mx-auto rounded-2xl flex flex-col gap-5 justify-center  items-center">
             <h1 className="font-bold text-4xl  text-orange-600 text-center">
             Memorization and Live Text Conversion
             </h1>

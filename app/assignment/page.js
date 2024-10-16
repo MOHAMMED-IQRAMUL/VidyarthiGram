@@ -10,8 +10,8 @@ const Assignment = () => {
         <LeftSideBar />
         <div className="right ml-2 w-[80%] min-h-screen">
           <RightNavBar />
+          <div className="w-[50%] mt-[20%] mx-auto h-[50%] ">Section To Display Assignments</div>
 
-          Assignment
         </div>
       </div>
       <Footer />

@@ -10,12 +10,12 @@ import {
 } from "@mui/material";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import React, { useEffect } from "react";
+import React from "react";
 import Footer from "../../components/Footer.js";
 import Navbar from "../../components/Navbar.js";
 
 export default function SignInPage() {
-  const router = useRouter();
+   
 
   return (
     <Container
